@@ -1,6 +1,6 @@
-module display_7(input logic [3:0],bcd,output logic[6:0] ser_seg;
+module display_7(input logic [3:0] bcd,output logic[6:0] ser_seg;
 
-always @ (*)
+always_comb
 
 case [bcd]
 4'b0000:ser_seg=7'b1111110;
