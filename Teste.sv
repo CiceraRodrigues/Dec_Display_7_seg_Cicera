@@ -1,5 +1,4 @@
 module Teste;
-    logic clk, rst;
     wire[3:0] bcd;
 	 wire [6:0] ser_seg
 
@@ -10,13 +9,9 @@ module Teste;
         #10;
         rst = 0;
        
-
-
         repeat(100) begin
-            if(clk)
-
             bcd=bcd+1
-            clk = ~clk;
+
             #10;
         end
     end
